@@ -1,0 +1,135 @@
+
+
+  @media screen and   (max-width: 768px) {
+ 
+
+    .line{
+      width: 30px;
+      height: 3px;
+      background: darkslategrey;
+      margin: 3px;
+     
+    }
+    
+    
+    .hamburger{
+      position: absolute;
+      cursor: pointer;
+      z-index: 3000;
+      right: 3%;
+      top: 35%;
+      transform: translate(-10%, -20%);
+      z-index: 2;
+    }
+   .hamburger:focus{
+      color: white;
+    }
+   
+    .nav-links{
+      position:fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background:rgba(227, 230, 67 );
+      height: 120vh;
+      width: 100%;
+     justify-content: center;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1.5s ease-out;
+      pointer-events: all;
+      height: 100%;
+      
+      
+    }
+   .nav-links.open{
+    clip-path: circle(1000px at 100% );
+    -webkit-clip-path: circle(1000px at 100% );
+    pointer-events: all;
+  
+   }
+  
+   
+  .nav-links  a{
+    opacity: 1;
+  }
+   
+  ul.nav-links  a:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+    margin-top: 200px;
+  }
+  ul.nav-links  a:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+  }
+  ul.nav-links  a:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+  }
+  ul.nav-links  a:nth-child(4){
+    transition: all 0.5s ease 0.8s;
+    margin-bottom: -100px;
+  }
+  a.nav-links .fade{
+    opacity: 1;
+  }
+  div.project{
+    flex: 50%;
+  max-width: 80%;
+}
+.sticky{
+  position: fixed;
+  top:0;
+  }
+  }
+  @media  screen and ( max-width: 420px) { 
+    
+   h1.section-1-heading{
+      font-size: 1.6rem;
+      padding: 4px 5px;
+      margin: 0 0 25px;
+      letter-spacing: 0.5rem;
+    }
+    
+
+.person-name {
+      font-size: 1.6rem;
+      padding: 7px;
+    }
+
+    .section-2-heading{
+     font-size: 26px;
+     text-align: center;
+    
+   }
+   div.project{
+    max-width: 150%;
+    flex: 50%;
+    
+}
+.projects-wrapper {
+  width: 130%;
+  flex-wrap: wrap;
+}
+.section-3-heading{
+  font-size: 26px;
+  text-align: center;
+ 
+   }
+   .section-4-heading{
+    font-size: 26px;
+    text-align: center;
+   
+     }
+     .copyright{
+      font-size: 16px;
+      text-align: center;
+     }
+
+     .all{
+       margin-bottom:5px;
+     }
+    .sticy{
+      position: fixed;
+      top:0;
+      }
+      
+  }
